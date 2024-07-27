@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "add-service"
+main = "src/index.ts"
+compatibility_date = "2024-07-27"
+compatibility_flags = [ "nodejs_compat" ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "add-service-db"
+database_id = "d182b4ae-639b-49b4-ba9a-b84f6d31acfd"
+migrations_table = "__drizzle_migrations"

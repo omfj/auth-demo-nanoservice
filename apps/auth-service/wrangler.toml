@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "auth-service"
+main = "src/index.ts"
+compatibility_date = "2024-07-27"
+compatibility_flags = [ "nodejs_compat" ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "auth-service-db"
+database_id = "e8b911db-ea5c-4d67-afc9-85ff0edb7189"
+migrations_table = "__drizzle_migrations"

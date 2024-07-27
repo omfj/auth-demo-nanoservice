@@ -1,0 +1,20 @@
+{
+  "name": "add-service",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --show-interactive-dev-session false --port 8001",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "wrangler d1 migrations apply add-service-db"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.32.1",
+    "hono": "4.5.2",
+    "ky": "^1.5.0",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240529.0",
+    "drizzle-kit": "^0.23.0",
+    "wrangler": "3.67.1"
+  }
+}
